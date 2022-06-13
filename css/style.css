@@ -7,6 +7,7 @@
 .container {
   width: 1140px;
   margin: 0 auto;
+  position: relative;
 }
 
 /* promo section */
@@ -126,7 +127,7 @@ h2.title {
 /* waiting section */
 
 .waiting {
-  height: 607px;
+  min-height: 607px;
   background: #efefef;
   padding: 85px 0 75px 0;
   text-align: center;
@@ -163,18 +164,13 @@ h2.title {
 }
 
 .waiting .waiting_wrapper {
+  display: flex;
+  justify-content: space-between;
   margin-top: 45px;
 }
 
 .waiting .waiting_wrapper .waiting_item {
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 48px;
   width: 342px;
-}
-
-.waiting .waiting_wrapper .waiting_item:last-child {
-  margin-right: 0;
 }
 
 .waiting .waiting_wrapper .waiting_item .waiting_img {
@@ -187,4 +183,44 @@ h2.title {
   font-size: 15px;
   line-height: 21px;
   color: #4a4a4a;
+}
+
+/* optimization section */
+
+.optimization {
+  min-height: 547px;
+  padding: 108px 0 74px 0;
+}
+
+.optimization .optimization_header {
+  margin-left: 391px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  text-transform: uppercase;
+
+  color: #299cbd;
+}
+
+.optimization .optimization_text {
+  margin-left: 389px;
+  margin-top: 25px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 27px;
+  color: #4a4a4a;
+}
+
+.optimization .optimization_text span {
+  font-weight: 700;
+}
+
+.optimization .optimization_img {
+  position: absolute;
+  top: -47px;
+  left: -240px;
+  z-index: -1;
 }
